@@ -1,0 +1,31 @@
+sticky-top -> class to make 'position:sticky' , so the element that take that class will be
+ scroll with you when navigate page
+
+fs-2  -> change `font-size: 0.5rem`
+
+text-<color name> -> ex text-white to make `color:white`
+
+d-none d-lg-block -> to make elelment appear only in larg screen
+
+text-uppercase  -> transform text to capital letters
+
+position-relative -> to `position: relative`
+
+____________________________________________
+<><><><> Grid System In Bootstrap <><><><><>
+--------------------------------------------
+.row -> clas that will consider the whole screen is 12 columns
+col-4 -> element that take this class will take 4 columns from 12 
+col-lg-4 -> this elements will take 4 columns from 12 in larg screen
+col-md-4 -> this elements will take 4 columns from 12 in medium screen
+col-sm-4 -> this elements will take 4 columns from 12 in small screen
+lh-lg -> to make `line-height: 2`
+
+
+
+-----------------------------
+list-unstyled -> to make `list-style: none`
+
+text-start  -> to give `text-align: left`
+text-end  -> to give `text-align: right`
+text-center  -> to give `text-align: center`

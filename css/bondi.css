@@ -1,0 +1,214 @@
+:root {
+    --dark: #19283f;
+    --green: #33d1cc;
+    --red  : #ff3150;
+    --yellow: #ffc400;
+    --section-color: #eee;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.main-btn {
+    background-color: var(--red);
+    color: var(--yellow);
+}
+
+.main-heading {
+    text-align: center;
+    padding: 0.5rem;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.main-heading::before {
+    content: '';
+    position: absolute;
+    background-color: var(--green);
+    height: 3px;
+    width: 70%;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.main-heading h2 + p {
+    color: var(--green);
+    font-weight: bold;
+}
+
+/* start navbar */
+.navbar {
+    background-color: var(--dark) !important;
+    color: #fff !important;
+}
+
+.navbar .logo {
+    width: 50px;
+    height: 50px;
+    
+}
+@media (max-width: 600px) {
+    .navbar .logo-a {
+        flex: 1;
+    }
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green) !important;
+}
+
+.navbar .search {
+    border-left: 1px solid var(--green);
+    font-weight: bold;
+}
+
+.navbar .search svg {
+    color: var(--green);
+    font-size: 25px;
+}
+
+.navbar .navbar-toggler {
+    color:  white;
+    border-color: white;
+    outline: none;
+    font-size: 25px;
+
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* end navbar */
+
+
+/* start landing  */
+.landing {
+    background-color: var(--dark);
+    min-height: calc(100vh - 76px);
+    color: white;
+}
+/* end landing  */
+
+
+/* start features */
+.features .row > div {
+    counter-increment: items;
+}
+.features .row .icon {
+    color: var(--green);
+}
+.features .row .icon::after {
+    content: counter(items);
+    position: absolute;
+    font-size: 15rem;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -125px;
+    color: #eff7fa;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    z-index: -1;
+}
+.features .row h3 {
+    color: var(--yellow);
+}
+/* end features */
+
+/* start our skills */
+.our-skills {
+    background-color: var(--section-color);
+}
+
+.btn-holder .active {
+    background-color: var(--red);
+    color: white;
+}
+
+.btn-holder > button:hover:not(.active) {
+    color: var(--red);
+}
+
+.our-skills .row .grid-item .box {
+    overflow: hidden;
+    padding: 5px;
+}
+
+.our-skills .row .grid-item .box::before {
+    content: attr(data-work);
+    position: absolute;
+    left: -100%;
+    top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #33d1ccc0;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.our-skills .row .grid-item .box:hover::before {
+    left: 5px;
+}
+/* end our skills */
+
+/* start team */
+.team {
+    background-color: var(--section-color);
+}
+.team h4 {
+    background-color: var(--green);
+}
+/* end team */
+
+/* start project */
+.project {
+    background-color: var(--dark);
+}
+/* end project */
+
+/* start subscribe */
+.subscribe {
+    background-color: var(--yellow);
+}
+.subscribe input {
+    background-color: transparent;
+    caret-color: white;
+    color:  white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.subscribe input::placeholder {
+    color:  white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.subscribe input:focus {
+    outline: none;
+}
+/* start subscribe */
+
+/* start footer */
+.footer {
+    background-color: var(--dark);
+}
+/* end footer */
